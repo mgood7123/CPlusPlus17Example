@@ -18,6 +18,8 @@ android {
             cmake {
     // NOTE: Android ndk r21 updates clang to version 9.0.8 which (mostly) fully supports C++17
     // NOTE: clang 9.0.8 PARTIALLY supports C++2a
+    // NOTE: see https://libcxx.llvm.org/cxx1z_status.html for C++17 status
+    // NOTE: see https://libcxx.llvm.org/cxx2a_status.html for C++2a (C++20) status
                 cppFlags "-std=c++17"
             }
         }
